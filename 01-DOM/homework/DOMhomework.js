@@ -59,9 +59,10 @@ function buildToDo(todo, index) {
   toDoShell.className = "toDoShell"
   let toDoText = document.createElement("span")
   toDoText.innerHTML = todo.description;
-  toDoText.setAttribute("id", index)
-  if (todo.complete == true) {
-    toDoText.class = "completeText"
+  toDoText.id = index
+  toDoText.addEventListener("click", completeToDo)
+  if (todo.complete) {
+    toDoText.className = "completeText"
   }
   toDoShell.appendChild(toDoText)
   return toDoShell
@@ -111,8 +112,12 @@ function addToDo() {
   // Tu código acá:
   let toDoInput = document.querySelector("#toDoInput")
   let nuevo = new ToDo(toDoInput.value)
-  toDoItems.push(nuevo)
-  toDoInput = ""
+  if (toDoInput.value) {
+    toDoItems.push(nuevo);
+    toDoInput.value = "";
+  } else {
+    alert("debes ingresar al menos un caracter");
+  }
   displayToDos()
 }
 
