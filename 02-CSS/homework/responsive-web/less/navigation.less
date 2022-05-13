@@ -1,1 +1,39 @@
 // Código de Nav acá
+@import "mixins.less";
+
+nav {
+
+    .display(column, center, center);
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 50px;
+    background-color: @nav-bg;
+
+    ul {
+
+        .display(row, center, center);
+        width: 100%;
+        font-size: 20px;
+        height: auto;
+       
+        
+
+        li {
+            display: inline-block;
+            padding: 3px;
+            text-align: center;
+            margin: 7px;
+        }
+
+        a {
+            color: @nav-font;
+        }
+    }
+    
+    @media @phone {
+        width: 100%;
+        height: auto;
+        
+    
+    }
+}

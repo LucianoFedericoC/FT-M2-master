@@ -1,1 +1,19 @@
 // Mixins acá
+.boton-mixins {
+    background-color: @btn-bg-color;
+    border-radius: 10px;
+}
+
+
+.headerimage-mixins {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.display (@direccion, @alinear, @justificar) {
+    display: flex;
+    flex-direction: @direccion;
+    align-items: @alinear;
+    justify-content: @justificar;
+}
+
