@@ -3,9 +3,13 @@ import Logo from '../logoHenry.png'
 import SearchBar from './SearchBar.jsx';
 import './Nav.css';
 
-function Nav({onSearch}) {
+function Nav({ onSearch }) {
   return (
-    <div>Nav</div>
+    <div>
+      <img src={Logo} alt="image" />
+      <span> Henry - Weather App </span>
+      <SearchBar onSearch={onSearch}/>
+    </div>
   );
 };
 
