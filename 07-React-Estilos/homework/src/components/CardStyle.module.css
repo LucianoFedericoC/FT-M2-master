@@ -1,0 +1,75 @@
+.cardstyle {
+
+    background-color: rgb(182, 177, 177);
+    width: 30%;
+    border-radius: 20px;
+    margin-left: 47px;
+    margin-top: 50px;
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1650965082276-558f3057cf38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+
+}
+
+.boton {
+
+    margin-top: 10px;
+    margin-left: 90%;
+    margin-right: 10px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.boton:hover {
+
+    background-color: red;
+
+}
+
+.titulo {
+
+font-size: 40px;
+
+}
+
+.textoa {
+
+    font-size: 30px;
+    margin-top: 10%;
+    margin-right: 60%;
+
+}
+
+.textob {
+
+    font-size: 30px;
+    margin-top: -14.4%;
+    margin-left: 60%;
+
+}
+
+.texto1 {
+
+    font-size: 25px;
+    margin-top: 10px;
+    margin-right: 60%;
+
+
+}
+
+.texto2 {
+
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 60%;
+
+}
+
+.img {
+
+    width: 20%;
+
+}
