@@ -58,7 +58,7 @@ function App() {
         />
 
         <Route
-          path='/about'
+          exact path='/about'
           component={About}
         />
 

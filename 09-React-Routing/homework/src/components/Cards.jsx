@@ -13,7 +13,7 @@ export default function Cards({ cities, onClose }) {
         name={c.name}
         img={c.img}
         onClose={() => onClose(c.id)}
-        id = {c.id}
+        id={c.id}
       />)}
     </div>
   );
